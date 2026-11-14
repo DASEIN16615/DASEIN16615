@@ -9,9 +9,9 @@
 ### 🌟 Open Source & Community
 
 * 🐛 **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** (260k+ ⭐)
-  * Submitted **Issue #124893**: Diagnosed Windows gateway update abort loop caused by shim-launched inline process (`python -I -c "<bootstrap>"`).
+  * Submitted root-cause diagnosis in **Issue #124893**: Diagnosed Windows gateway update abort loop caused by shim-launched inline process (`python -I -c "<bootstrap>"`).
   * Traced execution chain from `update_cmd_windows.py` to `gateway/status.py`; captured live OS process arguments via `psutil`.
-  * Identified lock file (`.lock` vs `.pid`) state machine discrepancy and proposed robust command-line pattern recognition for Windows runtime. Solution merged into upstream.
+  * Identified lock file (`.lock` vs `.pid`) state machine discrepancy and proposed robust pattern matching; analysis confirmed by maintainers and directly drove 3 upstream fix commits into main.
 * 🛠️ **[DASEIN16615/skill](https://github.com/DASEIN16615/skill)**
   * Standardized Agent execution protocols, tools, and modular skills.
   * Indexed as a substantive repository in third-party ecosystem review (*Skills Discovery Roundup*, June 2026).
@@ -31,7 +31,7 @@
 | Project | Description | Stack |
 | :--- | :--- | :--- |
 | 📈 [**index-take-profit-monitor**](https://github.com/DASEIN16615/index-take-profit-monitor) | Automated briefing & valuation monitoring pipeline (Nasdaq-100, S&P 500, CSI 300). Scheduled via GitHub Actions with HTML email reports. | Python · GitHub Actions · Email |
-| 🧱 [**Data-Structures-and-Algorithm-Analysis**](https://github.com/DASEIN16615/Data-Structures-and-Algorithm-Analysis---Code-Implementation) | Hand-crafted C++ implementations of classic data structures (trees, graphs, linked lists) with rigorous edge-case testing. | C++ · Algorithms · Memory Mgmt |
+| 🧱 [**cpp-dsa**](https://github.com/DASEIN16615/cpp-dsa) | Hand-crafted C++ implementations of classic data structures (trees, graphs, linked lists) with rigorous edge-case testing. | C++ · Algorithms · Memory Mgmt |
 | ⚡ [**Vibe-Coding**](https://github.com/DASEIN16615/Vibe-Coding) | Practical workflows, tiered memory design, and engineering guardrails for AI-paired software development. | AI-Native · Workflow · Protocols |
 | 🏆 [**Blue-Bridge-Cup-Study-Notes**](https://github.com/DASEIN16615/Blue-Bridge-Cup-Study-Notes) | Problem-solving templates and categorized algorithmic analysis for competitive programming. | C++ · Competitive Programming |
 
